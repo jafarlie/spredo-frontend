@@ -1,8 +1,9 @@
 'use client'
-import React, { useState, ChangeEvent, FormEvent } from 'react'
-import { Alert, Space } from 'antd'
+import { useState, ChangeEvent, FormEvent } from 'react'
 import './styles.css'
 import ReCAPTCHA from 'react-google-recaptcha'
+import Alert from 'antd/lib/alert'
+import Space from 'antd/lib/space'
 
 const ContactForm = () => {
   // States for each input field
@@ -59,7 +60,7 @@ const ContactForm = () => {
     //   body: JSON.stringify({ captchaValue: captcha }),
     // });
 
-    let data = await fetch('/api/test', {
+    let data = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(object),
@@ -77,6 +78,7 @@ const ContactForm = () => {
         setServerPostMessage('')
       }, 4000)
     } else {
+      console.log('SERVER RESPONSE: ', serverResponse.message)
       setServerPostMessage(serverResponse.message)
       setServerResponseType('error')
       setTimeout(() => {
@@ -93,7 +95,7 @@ const ContactForm = () => {
   return (
     <>
       <div className="bg-bread relative flex flex-col md:flex-row h-screen max-h-800 w-full bg-cover bg-center justify-between mb-3">
-        <div className="w-full md:w-1/3 flex justify-center z-10 items-center px-2 md:p-4 bg-gray-200">
+        <div className="w-full md:w-1/3 flex justify-center z-10 items-center px-2 md:p-4">
           <div className="ml-12 mb-6" style={{ color: 'black' }}>
             <h1 className="text-3xl font-bold pb-3">Send us a message</h1>
             <h2 className="text-2xl mt-6 text-gray-600">
