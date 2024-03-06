@@ -4,7 +4,7 @@ export default function TrustedBy() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h1
           className="text-4xl font-bold tracking-normal text-gray-900 sm:text-4xl text-center"
-          style={{ color: 'white' }}
+          style={{ color: 'black' }}
         >
           Trusted by the worlds most innovative teams
         </h1>
