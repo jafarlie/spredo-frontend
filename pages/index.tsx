@@ -1,5 +1,5 @@
-import IndexPage from 'components/IndexPage'
-import PreviewIndexPage from 'components/PreviewIndexPage'
+import PreviewIndexPage from 'components/sanity_components/PreviewIndexPage'
+import SpredoIndexPage from 'components/spredo_components/indexPage/SpredoIndexPage'
 import { readToken } from 'lib/sanity.api'
 import { getAllPosts, getClient, getSettings } from 'lib/sanity.client'
 import { Post, Settings } from 'lib/sanity.queries'
@@ -22,7 +22,7 @@ export default function Page(props: PageProps) {
     return <PreviewIndexPage posts={posts} settings={settings} />
   }
 
-  return <IndexPage posts={posts} settings={settings} />
+  return <SpredoIndexPage />
 }
 
 export const getStaticProps: GetStaticProps<PageProps, Query> = async (ctx) => {

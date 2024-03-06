@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Greycliff';
+  src: url('/spredo_fonts/GreycliffCF-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Greycliff';
+  src: url('/spredo_fonts/GreycliffCF-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+body {
+  font-family: 'Greycliff', sans-serif;
+}

@@ -1,0 +1,73 @@
+.carouselParentContainer {
+  height: 300px;
+  margin-top: 50px;
+  line-height: 160px;
+  text-align:center;
+  background: #dba76c;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .sm-h-50 {
+    height: 50px;
+  }
+  .sm-mb-20 {
+    margin-bottom: 4rem;
+  }
+  .sm-h-400 {
+    height: 400px;
+  }
+  .carouselParentContainer {
+    height: 400px;
+  }
+  .text-4xl {
+    font-size: 2.5rem;
+    line-height: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .monthlySpreads{
+    font-size: 1.5rem;
+    line-height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  /* .text-xl{
+    font-size: 1rem;
+  } */
+  .ml-24 {
+    margin-left: 0;
+  }
+  .sm-text-2xl {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-left:1rem;
+  }
+  .spredo-machine-container{
+    height: 0px;
+    margin-bottom: -100px;
+  }
+  .spredo-machine{
+    margin-top: 0;
+  }
+  .landing-page-headers{
+    margin-bottom: 0;
+    height: 20px;
+    justify-content: start;
+    margin-left: 2rem;
+  }
+  .landing-page-conversion-button{
+    width: 18rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+  .section-1{
+    height: 640px;
+  }
+  .spredo-machine-container-parent{
+    margin-bottom: -200px;
+  }
+  .aboutUs{
+    height: 700px;
+  }
+}

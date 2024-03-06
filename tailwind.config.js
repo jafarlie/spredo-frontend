@@ -16,6 +16,12 @@ module.exports = {
         cyan: '#79FFE1',
         'blue-500': '#2276FC',
         'yellow-100': '#fef7da',
+        nutty: '#dba76c',
+        darkJelly: '#640223',
+        midnightGreen: '#05393c',
+        bread: '#fff7e1',
+        light: '#ffffff',
+        black: '#000000',
       },
       spacing: {
         28: '7rem',
@@ -31,6 +37,20 @@ module.exports = {
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      fontFamily: {
+        sans: ['var(--font-greycliff)'],
+      },
+      variants: {
+        extend: {
+          display: ['responsive'],
+          textColor: ['hover'],
+        },
       },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
